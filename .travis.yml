@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: HelloWorld.xcodeproj
+xcode_scheme: HelloWorldTests

@@ -14,6 +14,7 @@
 		513764621A1E627A008E709E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513764611A1E627A008E709E /* Images.xcassets */; };
 		513764651A1E627A008E709E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513764631A1E627A008E709E /* LaunchScreen.xib */; };
 		513764711A1E627A008E709E /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 513764701A1E627A008E709E /* HelloWorldTests.m */; };
+		5164A2951A1E6B640019A0E1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5164A2941A1E6B640019A0E1 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		5137646A1A1E627A008E709E /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5137646F1A1E627A008E709E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513764701A1E627A008E709E /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		5164A2941A1E6B640019A0E1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		513764481A1E6279008E709E = {
 			isa = PBXGroup;
 			children = (
+				5164A2941A1E6B640019A0E1 /* .travis.yml */,
 				513764531A1E6279008E709E /* HelloWorld */,
 				5137646D1A1E627A008E709E /* HelloWorldTests */,
 				513764521A1E6279008E709E /* Products */,
@@ -201,6 +204,7 @@
 			files = (
 				513764601A1E627A008E709E /* Main.storyboard in Resources */,
 				513764651A1E627A008E709E /* LaunchScreen.xib in Resources */,
+				5164A2951A1E6B640019A0E1 /* .travis.yml in Resources */,
 				513764621A1E627A008E709E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				513764761A1E627A008E709E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		513764771A1E627A008E709E /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				513764791A1E627A008E709E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
