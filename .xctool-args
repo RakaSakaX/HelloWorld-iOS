@@ -1,0 +1,7 @@
+[
+  "-project", "HelloWorld.xcodeproj",
+  "-scheme", "HelloWorldTests",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]
