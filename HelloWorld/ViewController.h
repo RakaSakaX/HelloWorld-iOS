@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet UILabel *helloWorldLabel;
+}
 
+@property (retain, nonatomic) IBOutlet UILabel *helloWorldLabel;
+
+- (NSString *)getHelloWorldString;
 
 @end
 

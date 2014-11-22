@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface HelloWorldTests : XCTestCase
 
@@ -25,16 +26,21 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testGetHelloWorldString {
+    
+    ViewController *viewController = [[ViewController alloc] init];
+    NSString *helloWorldString = [viewController getHelloWorldString];
+
+    XCTAssert([helloWorldString isEqualToString:@"Hello World"], @"getHelloWorldString == 'Hello World'");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+/*
+- (void)testHelloWorldLabelInitialized {
+    
+    ViewController *viewController = [[ViewController alloc] init];
+    
+    XCTAssert(viewController.helloWorldLabel != nil, @"helloWorldLabel != nil");
 }
+*/
 
 @end
