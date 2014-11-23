@@ -1,5 +1,5 @@
 [
-  "-project", "HelloWorld.xcodeproj",
+  "-workspace", "HelloWorld.xcworkspace",
   "-scheme", "HelloWorldTests",
   "-configuration", "Debug",
   "-sdk", "iphonesimulator",
