@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		655505C41A20624400A8A6F4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 655505C31A20624400A8A6F4 /* README.md */; };
-		655505C61A20625700A8A6F4 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 655505C51A20625700A8A6F4 /* .travis.yml */; };
+		655505C81A219C1000A8A6F4 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 655505C71A219C1000A8A6F4 /* AppDelegateTests.m */; };
 		65C492331A206117000DBE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C492321A206117000DBE84 /* main.m */; };
 		65C492361A206117000DBE84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C492351A206117000DBE84 /* AppDelegate.m */; };
 		65C492391A206117000DBE84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C492381A206117000DBE84 /* ViewController.m */; };
 		65C4923C1A206117000DBE84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C4923A1A206117000DBE84 /* Main.storyboard */; };
 		65C4923E1A206117000DBE84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C4923D1A206117000DBE84 /* Images.xcassets */; };
 		65C492411A206117000DBE84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C4923F1A206117000DBE84 /* LaunchScreen.xib */; };
-		65C4924D1A206117000DBE84 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4924C1A206117000DBE84 /* HelloWorldTests.m */; };
+		65C4924D1A206117000DBE84 /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4924C1A206117000DBE84 /* ViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +30,7 @@
 /* Begin PBXFileReference section */
 		655505C31A20624400A8A6F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		655505C51A20625700A8A6F4 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		655505C71A219C1000A8A6F4 /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
 		65C4922D1A206117000DBE84 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C492311A206117000DBE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C492321A206117000DBE84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		65C492401A206117000DBE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		65C492461A206117000DBE84 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C4924B1A206117000DBE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65C4924C1A206117000DBE84 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		65C4924C1A206117000DBE84 /* ViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,8 @@
 		65C492491A206117000DBE84 /* HelloWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				65C4924C1A206117000DBE84 /* HelloWorldTests.m */,
+				655505C71A219C1000A8A6F4 /* AppDelegateTests.m */,
+				65C4924C1A206117000DBE84 /* ViewControllerTests.m */,
 				65C4924A1A206117000DBE84 /* Supporting Files */,
 			);
 			path = HelloWorldTests;
@@ -207,7 +208,6 @@
 			files = (
 				65C4923C1A206117000DBE84 /* Main.storyboard in Resources */,
 				65C492411A206117000DBE84 /* LaunchScreen.xib in Resources */,
-				655505C61A20625700A8A6F4 /* .travis.yml in Resources */,
 				65C4923E1A206117000DBE84 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +228,6 @@
 			files = (
 				65C492391A206117000DBE84 /* ViewController.m in Sources */,
 				65C492361A206117000DBE84 /* AppDelegate.m in Sources */,
-				655505C41A20624400A8A6F4 /* README.md in Sources */,
 				65C492331A206117000DBE84 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C4924D1A206117000DBE84 /* HelloWorldTests.m in Sources */,
+				655505C81A219C1000A8A6F4 /* AppDelegateTests.m in Sources */,
+				65C4924D1A206117000DBE84 /* ViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

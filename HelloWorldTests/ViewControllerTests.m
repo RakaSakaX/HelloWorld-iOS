@@ -1,6 +1,6 @@
 //
-//  HelloWorldTests.m
-//  HelloWorldTests
+//  ViewControllerTests.m
+//  ViewControllerTests
 //
 //  Created by Daniel Low on 11/20/14.
 //  Copyright (c) 2014 rakasaka. All rights reserved.
@@ -10,19 +10,17 @@
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
 
-@interface HelloWorldTests : XCTestCase
+@interface ViewControllerTests : XCTestCase
 
 @end
 
-@implementation HelloWorldTests
+@implementation ViewControllerTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
@@ -34,13 +32,16 @@
     XCTAssert([helloWorldString isEqualToString:@"Hello World"], @"getHelloWorldString == 'Hello World'");
 }
 
-/*
 - (void)testHelloWorldLabelInitialized {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    [viewController performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
     
-    ViewController *viewController = [[ViewController alloc] init];
+    // Need to manually call this to ensure init logic is called
+    [viewController viewDidLoad];
     
     XCTAssert(viewController.helloWorldLabel != nil, @"helloWorldLabel != nil");
+    XCTAssert([viewController.helloWorldLabel.text isEqualToString:@"Hello World"]);
 }
-*/
 
 @end
