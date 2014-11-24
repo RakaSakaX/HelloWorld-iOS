@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		655505C81A219C1000A8A6F4 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 655505C71A219C1000A8A6F4 /* AppDelegateTests.m */; };
+		65673F011A231A52002C5CE7 /* ViewControllerKiwiSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65673F001A231A52002C5CE7 /* ViewControllerKiwiSpec.m */; };
 		65C492331A206117000DBE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C492321A206117000DBE84 /* main.m */; };
 		65C492361A206117000DBE84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C492351A206117000DBE84 /* AppDelegate.m */; };
 		65C492391A206117000DBE84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C492381A206117000DBE84 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		65C4923E1A206117000DBE84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C4923D1A206117000DBE84 /* Images.xcassets */; };
 		65C492411A206117000DBE84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C4923F1A206117000DBE84 /* LaunchScreen.xib */; };
 		65C4924D1A206117000DBE84 /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4924C1A206117000DBE84 /* ViewControllerTests.m */; };
+		79B4F4EB21A5E47CC032B849 /* libPods-HelloWorldTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FF6964464E4D3E418F6EFD /* libPods-HelloWorldTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		373441FC4B39B9C5BCDB15CF /* Pods-HelloWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldTests/Pods-HelloWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		655505C31A20624400A8A6F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		655505C51A20625700A8A6F4 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		655505C71A219C1000A8A6F4 /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
+		65673EFF1A231882002C5CE7 /* .xctool-args */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".xctool-args"; sourceTree = "<group>"; };
+		65673F001A231A52002C5CE7 /* ViewControllerKiwiSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerKiwiSpec.m; sourceTree = "<group>"; };
 		65C4922D1A206117000DBE84 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C492311A206117000DBE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C492321A206117000DBE84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +49,8 @@
 		65C492461A206117000DBE84 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C4924B1A206117000DBE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C4924C1A206117000DBE84 /* ViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
+		92FF6964464E4D3E418F6EFD /* libPods-HelloWorldTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloWorldTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62B7872D6D1AE8BAB36354D /* Pods-HelloWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldTests/Pods-HelloWorldTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,20 +65,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B4F4EB21A5E47CC032B849 /* libPods-HelloWorldTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D0D2ADE3E47A8563CA8169 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				373441FC4B39B9C5BCDB15CF /* Pods-HelloWorldTests.debug.xcconfig */,
+				A62B7872D6D1AE8BAB36354D /* Pods-HelloWorldTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		65C492241A206117000DBE84 = {
 			isa = PBXGroup;
 			children = (
+				65673EFF1A231882002C5CE7 /* .xctool-args */,
 				655505C51A20625700A8A6F4 /* .travis.yml */,
 				655505C31A20624400A8A6F4 /* README.md */,
 				65C4922F1A206117000DBE84 /* HelloWorld */,
 				65C492491A206117000DBE84 /* HelloWorldTests */,
 				65C4922E1A206117000DBE84 /* Products */,
+				63D0D2ADE3E47A8563CA8169 /* Pods */,
+				B6987D17000F369AF5F15D8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +133,7 @@
 			children = (
 				655505C71A219C1000A8A6F4 /* AppDelegateTests.m */,
 				65C4924C1A206117000DBE84 /* ViewControllerTests.m */,
+				65673F001A231A52002C5CE7 /* ViewControllerKiwiSpec.m */,
 				65C4924A1A206117000DBE84 /* Supporting Files */,
 			);
 			path = HelloWorldTests;
@@ -124,6 +145,14 @@
 				65C4924B1A206117000DBE84 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6987D17000F369AF5F15D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FF6964464E4D3E418F6EFD /* libPods-HelloWorldTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65C492531A206117000DBE84 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */;
 			buildPhases = (
+				07803D2CC91629C7B1F0A1A1 /* Check Pods Manifest.lock */,
 				65C492421A206117000DBE84 /* Sources */,
 				65C492431A206117000DBE84 /* Frameworks */,
 				65C492441A206117000DBE84 /* Resources */,
+				1A3AC10E91398EE1D1AD14B3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +252,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07803D2CC91629C7B1F0A1A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1A3AC10E91398EE1D1AD14B3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldTests/Pods-HelloWorldTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65C492291A206117000DBE84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -238,6 +302,7 @@
 			files = (
 				655505C81A219C1000A8A6F4 /* AppDelegateTests.m in Sources */,
 				65C4924D1A206117000DBE84 /* ViewControllerTests.m in Sources */,
+				65673F011A231A52002C5CE7 /* ViewControllerKiwiSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +434,7 @@
 		};
 		65C492541A206117000DBE84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373441FC4B39B9C5BCDB15CF /* Pods-HelloWorldTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -388,6 +454,7 @@
 		};
 		65C492551A206117000DBE84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62B7872D6D1AE8BAB36354D /* Pods-HelloWorldTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
