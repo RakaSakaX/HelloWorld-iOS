@@ -48,7 +48,7 @@ main()
  	generateGcov
 	copyGcovToProjectDir
 # post
-	coveralls ${@+"$@"}
+	coveralls ${@+"$@"} --exclude Pods
 # clean up
 	removeGcov	
 }
