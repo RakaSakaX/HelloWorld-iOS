@@ -2,7 +2,7 @@ language: objective-c
 xcode_workspace: HelloWorld.xcworkspace
 xcode_scheme: HelloWorldTests
 xcode_sdk: iphonesimulator8.1
-#before_install:
+# before_install:
 #  - sudo easy_install cpp-coveralls
 #  - brew uninstall xctool
 #  - brew update
